@@ -1,0 +1,12 @@
+[Mon 2023-12-04 20:30:25] [INFO ] ----------------- Input paramters ------------------
+[Mon 2023-12-04 20:30:25] [INFO ] Input reads: test.lst
+[Mon 2023-12-04 20:30:25] [INFO ] Output directory: SY5Y-poka_collpase
+[Mon 2023-12-04 20:30:25] [INFO ] Multi threads: 50
+[Mon 2023-12-04 20:30:25] [INFO ] -------------- Collapse circular reads -------------
+[Mon 2023-12-04 20:30:25] [INFO ] Loading annotation gtf ..
+[Mon 2023-12-04 20:30:26] [INFO ] Step 1 - Clustering candidate circular reads
+[Mon 2023-12-04 20:30:31] [INFO ] Circular reads clusters: 2743
+[Tue 2023-12-05 04:44:44] [INFO ] Corrected clusters: 1359, 96/25/0/1238 annotated/denovo/lariat/unknown
+[Tue 2023-12-05 04:44:44] [INFO ] Step 2 - Calculating expression matrix
+[Tue 2023-12-05 04:44:45] [INFO ] Final circRNAs: 1358, isoforms: 1380
+[Tue 2023-12-05 04:44:45] [INFO ] Correction of Back-Spliced Junctions finished!
