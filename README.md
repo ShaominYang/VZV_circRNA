@@ -16,6 +16,16 @@
 # genome 
 - 14.VZV pOka_GFP_Luc strain (https://www.ncbi.nlm.nih.gov/nuccore/PP054841)
 
+# Data availability
+All sequencing data used in this study is available via NCBI SRA and Gene Expression Omnibus database, accession numbers PRJNA1056528, GSE223870, GSE252124 and GSE223957. 
+1. For whole-genome sequencing
+https://www.ncbi.nlm.nih.gov/sra/PRJNA1056528
+2. For circRNA short reads sequencing
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223870
+3. For circRNA long reads sequencing
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252124
+4. For mRNA sequencing
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223957
 ## To assemble genomic sequences from whole-genome sequencing data
 ```Shell
 conda activate assembly
