@@ -1,4 +1,7 @@
 # Core for "Identification and Characterization of Varicella Zoster Virus Circular RNA in Lytic Infection"
+
+This study investigates the role of circular RNAs (circRNAs) in the context of Varicella-Zoster Virus (VZV) lytic infection. We employed two sequencing technologies, short-read sequencing and long-read sequencing after RNase R treatment on VZV-infected neuroblastoma cells to identify and characterize both cellular and viral circRNAs. Our large scanning analysis identified and subsequent experiments confirmed 200 VZV circRNAs. Importantly, these VZV circRNAs were also detected in tissues from herpes zoster patients. Moreover, we discovered numerous VZV latency-associated transcripts (VLTs)-like circRNAs (circVLTslytic), which contain multiple exons and different isoforms within the same back-splicing breakpoint. To understand the functional significance of these circVLTslytic, we utilized the Bacteria Artificial Chromosome system to disrupt the expression of viral circRNAs in genomic DNA location. We revealed that the sequence flanking circVLTs’ 5’ splice donor played a pivotal role as a cis-acting element in the formation of circVLTslytic. The circVLTslytic was dispensable for VZV replication, but the mutation of downstream of circVLTslytic exon 5 led to increased acyclovir sensitivity in VZV infection models. These models include in vitro culture of human skin tissue and human DRG, as well as in vivo xenografts of human skin tissue in SCID mice. This suggests that circVLTslytic may have a role in modulating the sensitivity to antiviral treatment. Overall, the study highlights the functional importance of VZV-derived circRNAs and their potential contribution to viral pathogenesis. The findings shed new insight into the regulation of cellular and viral transcription during VZV lytic infection, emphasizing the intricate interplay between circRNAs and viral processes.
+
 # Requirements
 - 1.Bash (Ubuntu, version 18.04)
 - 2.Perl (https://www.perl.org)
@@ -6,16 +9,15 @@
 - 4.BWA (http://bio-bwa.sourceforge.net)
 - 5.Bowtie2 (https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 - 6.SAMtools (http://www.htslib.org/)
-- 7. Trim Galore (http://www.bioinformatics.bbsrc.ac.uk/projects/trim_galore/)
-- 8. Unicycler (https://github.com/rrwick/Unicycler)
+- 7.Trim Galore (http://www.bioinformatics.bbsrc.ac.uk/projects/trim_galore/)
+- 8.Unicycler (https://github.com/rrwick/Unicycler)
 - 9.CIRI2(version v2.0.6) (https://sourceforge.net/projects/ciri/files/CIRI2/)
 - 10.CIRI-full (version 2.0) (https://sourceforge.net/projects/ciri/files/CIRI-full/)
 - 11.vircircRNA (https://github.com/jiwoongbio/vircircRNA)
 - 12.find_circ (https://github.com/marvin-jens/find_circ)
 - 13.CIRI-long (https://github.com/bioinfo-biols/CIRI-long)
-# genome 
-- 14.VZV pOka_GFP_Luc strain (https://www.ncbi.nlm.nih.gov/nuccore/PP054841)
-
+# Reference genome 
+- 1.VZV pOka_GFP_Luc strain (https://www.ncbi.nlm.nih.gov/nuccore/PP054841)
 # Data availability
 All sequencing data used in this study is available via NCBI SRA and Gene Expression Omnibus database, accession numbers PRJNA1056528, GSE223870, GSE252124 and GSE223957. 
 1. For whole-genome sequencing
@@ -181,7 +183,6 @@ done
 for i in pOka_WT_1 pOka_WT_2 pOka_WT_3
 do
 bwa mem -t 100 PP054841.fasta ${i}_1.fq.gz ${i}_2.fq.gz > ${i}.sam
-#排序
 /kydata/ysm/samtools-1.13/bin/samtools view -b ${i}.sam > ${i}.bam
 /kydata/ysm/samtools-1.13/bin/samtools sort ${i}.bam -o ${i}_sorted.bam -@ 100
 /kydata/ysm/samtools-1.13/bin/samtools index ${i}_sorted.bam
@@ -195,7 +196,6 @@ bwa index PP054841_M1.fasta
 for i in pOka_M1_1 pOka_M1_3 pOka_M1_3
 do
 bwa mem -t 100 PP054841_M1.fasta ${i}_1.fq.gz ${i}_2.fq.gz > ${i}.sam
-#排序
 /kydata/ysm/samtools-1.13/bin/samtools view -b ${i}.sam > ${i}.bam
 /kydata/ysm/samtools-1.13/bin/samtools sort ${i}.bam -o ${i}_sorted.bam -@ 100
 /kydata/ysm/samtools-1.13/bin/samtools index ${i}_sorted.bam
@@ -209,7 +209,6 @@ bwa index PP054841_M2.fasta
 for i in pOka_M2_1 pOka_M2_2 pOka_M2_3
 do
 bwa mem -t 100 PP054841_M2.fasta ${i}_1.fq.gz ${i}_2.fq.gz > ${i}.sam
-#排序
 /kydata/ysm/samtools-1.13/bin/samtools view -b ${i}.sam > ${i}.bam
 /kydata/ysm/samtools-1.13/bin/samtools sort ${i}.bam -o ${i}_sorted.bam -@ 100
 /kydata/ysm/samtools-1.13/bin/samtools index ${i}_sorted.bam
