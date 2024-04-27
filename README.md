@@ -17,6 +17,7 @@
 - 14.VZV pOka_GFP_Luc strain (https://www.ncbi.nlm.nih.gov/nuccore/PP054841)
 
 ## To assemble genomic sequences from whole-genome sequencing data
+```Shell
 conda activate assembly
 time unicycler -t 100 \
 -1 trim_galore_out_dir/VZV_BAC_WT_short_1_val_1.fq.gz -2 trim_galore_out_dir/VZV_BAC_WT_short_2_val_2.fq.gz \
@@ -25,6 +26,7 @@ time unicycler -t 100 \
 ##Generating genome contained human and VZV
 
 cat chrALL.fa PP054841.fasta > chrALL.fa
+```
 ## 1.1  Build BWA index
 ```Shell
 bwa index chrALL.fa
