@@ -116,7 +116,7 @@ perl vircircRNA_chromosome.pl PP054841.fasta > concatenated_circular_PP054841.fa
 bwa index concatenated_circular_PP054841.fasta
 bwa mem -t 100 -Y concatenated_circular_PP054841.fasta all_1.fq.gz all_2.fq.gz > mapped_read.sam
 perl vircircRNA_junction.pl -g PP054841.gff3 -A junction.alignment.html mapped_read.sam concatenated_circular_PP054841.fasta > PP054841_junction.txt
-perl vircircRNA_diagram.pl -g PP054841.gff3> PP054841_junction.txt concatenated_circular_PP054841.fasta PP054841.fasta > diagram.png
+perl vircircRNA_diagram.pl -g PP054841.gff3 > PP054841_junction.txt concatenated_circular_PP054841.fasta PP054841.fasta > diagram.png
 ```
 ## 3 Running CIRI-long pipeline
 ```Shell
