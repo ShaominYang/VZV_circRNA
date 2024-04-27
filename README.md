@@ -172,7 +172,7 @@ rm ${i}Aligned.out.bam
 rm *.out
 featureCounts -T 50 -p -t exon -g gene_id -a mRNA.gtf -o counts/${i}.counts.txt ${i}_sorted.bam
 echo ${i}_Counts_finished
-cut -f 1,7 counts/${i}.counts.txt |grep -v '^#' >feacturCounts/${i}_feacturCounts.txt
+cut -f 1,7 counts/${i}.counts.txt |grep -v '^#' > feacturCounts/${i}_feacturCounts.txt
 echo ${i}_featureCounts_finished
 done 
 ```
