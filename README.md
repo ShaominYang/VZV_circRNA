@@ -176,7 +176,7 @@ cut -f 1,7 counts/${i}.counts.txt |grep -v '^#' > feacturCounts/${i}_feacturCoun
 echo ${i}_featureCounts_finished
 done 
 ```
-## 5 Running coverage statistics pipeline 
+## 5. Running coverage statistics pipeline 
 
 ### 5.1 PP054841_WT
 ```Shell
