@@ -2,6 +2,11 @@
 
 This study investigates the role of circular RNAs (circRNAs) in the context of Varicella-Zoster Virus (VZV) lytic infection. We employed two sequencing technologies, short-read sequencing and long-read sequencing after RNase R treatment on VZV-infected neuroblastoma cells to identify and characterize both cellular and viral circRNAs. Our large scanning analysis identified and subsequent experiments confirmed 200 VZV circRNAs. Importantly, these VZV circRNAs were also detected in tissues from herpes zoster patients. Moreover, we discovered numerous VZV latency-associated transcripts (VLTs)-like circRNAs (circVLTslytic), which contain multiple exons and different isoforms within the same back-splicing breakpoint. To understand the functional significance of these circVLTslytic, we utilized the Bacteria Artificial Chromosome system to disrupt the expression of viral circRNAs in genomic DNA location. We revealed that the sequence flanking circVLTs’ 5’ splice donor played a pivotal role as a cis-acting element in the formation of circVLTslytic. The circVLTslytic was dispensable for VZV replication, but the mutation of downstream of circVLTslytic exon 5 led to increased acyclovir sensitivity in VZV infection models. These models include in vitro culture of human skin tissue and human DRG, as well as in vivo xenografts of human skin tissue in SCID mice. This suggests that circVLTslytic may have a role in modulating the sensitivity to antiviral treatment. Overall, the study highlights the functional importance of VZV-derived circRNAs and their potential contribution to viral pathogenesis. The findings shed new insight into the regulation of cellular and viral transcription during VZV lytic infection, emphasizing the intricate interplay between circRNAs and viral processes.
 
+![image](https://github.com/ShaominYang/VZV_circRNA/blob/main/VZV-20220717-3.jpg)
+### <p align="center"> The structure diagram of VZV </p>
+
+
+
 # Requirements
 - 1.Bash (Ubuntu, version 18.04)
 - 2.Perl (https://www.perl.org)
