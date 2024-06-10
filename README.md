@@ -221,3 +221,7 @@ bwa mem -t 100 PP054841_M2.fasta ${i}_1.fq.gz ${i}_2.fq.gz > ${i}.sam
 echo ${i}_mapped
 done
 ```
+# Citations
+
+
+> Yang, S., Cao, D., Jaijyan, D.K. et al. Identification and characterization of Varicella Zoster Virus circular RNA in lytic infection. Nat Commun 15, 4932 (2024). https://doi.org/10.1038/s41467-024-49112-4
